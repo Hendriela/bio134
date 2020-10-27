@@ -31,6 +31,11 @@ l_fyle = fyle.readlines()
 print(str(l_fyle).strip("'[]"))
 fyle.close()
 
+#%% split and join
+s = 'dfkfje*jfdn*pwndnv*sfkjadjbvbjbajbfkaj*nkd*nvndlanakndndhnfajnja*lsdkjf*cevgfjh**nfe*en*m\r\n'
+s1 = s.split()[0].split('*')
+s2 = "".join(s1)
+print(len(s2))
 
 #%% HTML
 

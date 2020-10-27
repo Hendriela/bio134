@@ -88,14 +88,61 @@ for b1 in bases:
             
             list0.sort()
 
- 
-
             if list0 not in gamow:
-                gamow.append(list0)         
-            
-    
+                gamow.append(list0)
 
- 
+list_sorted = sorted(gamow)
+print(list_sorted[1][2])
 
-list_sorted = sorted(gamow) 
-print(list_sorted[1][2]) 
+#%% My version
+
+# Make codons
+bases = ['A', 'T', 'C', 'G']
+codons = []
+for base1 in bases:
+    for base2 in bases:
+        for base3 in bases:
+            codons.append(base1+base2+base3)
+
+# Make diamond for each codon
+main_diamonds = []
+for codon in codons:
+    # Make anti-codon
+    anti = []
+    for base in codon:
+        if base == 'A':
+            anti.append('T')
+        elif base == 'T':
+            anti.append('A')
+        elif base == 'C':
+            anti.append('G')
+        else:
+            anti.append('C')
+    # Make diamond (first 2 codon-bases and last 2 anti-codon-bases)
+    main_diamonds.append(codon[0]+codon[1]+anti[-1]+anti[-2])
+
+# Go through all codons. Make all equivalent diamonds and sort the corresponding
+# codons together (if they are not somewhere in the list already)
+gamow = [[] for i in range(20)]
+count = 0
+for cod_idx, codon in enumerate(codons):
+    # See if this codon has already been sorted
+    if not any(codon in sublist for sublist in gamow):
+        dia = main_diamonds[cod_idx]
+        # Make equivalent diamonds
+        equi_diamonds = [dia[0]+dia[3]+dia[2]+dia[1],
+                         dia[2]+dia[1]+dia[0]+dia[3],
+                         dia[2]+dia[3]+dia[0]+dia[1]]
+        equi_codons = [codon]
+        # Find the original codons of the equivalent diamonds
+        for d in equi_diamonds:
+            equi_codons.append(codons[main_diamonds.index(d)])
+        # Remove duplicates with set() and order list
+        equi_codons = list(set(equi_codons))
+        equi_codons.sort()
+        gamow[count] = equi_codons
+        count += 1
+
+# Sort and print final result
+gamow.sort()
+print(gamow[6][3])
