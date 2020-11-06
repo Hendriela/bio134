@@ -5,7 +5,7 @@ Created on Thu Oct 15 13:08:29 2020
 @author: Hendrik
 """
 
-with open('.\Documents\Bio134\darwin.txt') as file:
+with open('darwin.txt') as file:
     darwin = file.readlines()
 
 lengths = 0 

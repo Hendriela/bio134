@@ -4,18 +4,13 @@ Created on Sun Oct 11 15:29:43 2020
 
 @author: Hendrik
 """
-import os
 
-# Load files
-os.getcwd()
-os.chdir(r'C:\Users\Hendrik')
-
-with open(r'C:\Users\Hendrik\Documents\Bio134\human_brain_proteins.csv') as file:
+with open(r'human_brain_proteins.csv') as file:
     brain_all = file.readlines()
     
-with open(r'.\Documents\Bio134\human_plasma_proteins.csv') as file:
+with open(r'human_plasma_proteins.csv') as file:
     plasma_all = file.readlines()
-    
+
 # Isolate protein IDs
 brain_all_id = (len(brain_all)-1) * [0]
 for line in range(1, len(brain_all)):
