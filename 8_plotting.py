@@ -7,12 +7,13 @@ Created on Tue Oct 20 10:37:02 2020
 
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
-gamma = 1.79 
-num = np.linspace(0,5,500) 
-x = gamma**(4*num)*np.cos(2*np.pi*num) 
+gamma = 1.52
+num = np.linspace(1, 4, 500)
+x = gamma**(4*num)*np.cos(2*np.pi*num)
 y = gamma**(4*num)*np.sin(2*np.pi*num) 
-plt.plot(x,y,'o',color='yellow',markeredgecolor='yellow') 
+plt.plot(x,y,'o',color='yellow',markeredgecolor='yellow')
 ax = plt.gca()   # stands for get-current-axes 
 ax.set_aspect('equal') 
 ax.xaxis.set_visible(False) 
@@ -20,9 +21,17 @@ ax.yaxis.set_visible(False)
 ax.set_facecolor("black")
 
 
-def sum_average(l):
-    return sum(l), sum(l)/len(l)
+import matplotlib.pyplot as pl
+from numpy import linspace, pi, cos, sin
 
-l = [5.75, 5.37, 2.45, 8.22, 7.45, 1.89, 3.82, 2.49]
-summe, mean = sum_average(l)
-print(int(summe * mean))
+growth_factor = 1.54
+t = linspace(0, 5)
+
+x = (growth_factor ** (2 * t)) * cos(2 * pi * t)
+y = (growth_factor ** (2 * t)) * sin(2 * pi * t)
+
+pl.plot(x, y)
+
+
+
+

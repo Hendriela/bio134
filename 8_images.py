@@ -43,3 +43,30 @@ smooth[1:-1,1:-1] = smooth[1:-1,1:-1]/9
 print(smooth[5,499,0])
 print(smooth[181,260,1])
 print(np.mean(smooth))
+
+
+#%% Zoe
+
+import numpy
+import matplotlib.pyplot as pl
+import matplotlib.image as img
+
+bug = img.imread('stinkbug.png')
+bug2 = 1 * bug
+
+
+def smoothing(x, y, h, color, position1, position2, image):
+    img_new = 1*image
+    a = 1
+    for j in range(1, x - 1):
+        for k in range(1, y - 1):
+            img_new[j, k] = numpy.mean(image[j - h:j + h + 1, k - h:k + h + 1])
+    Color = img_new[position1, position2, color]
+    Mean = numpy.mean(img_new)
+    return print("Color=", Color, "\nMean=", Mean)
+
+    print(img_new[5, 499, 0])
+    print(img_new[181, 260, 1])
+    print(np.mean(img_new))
+
+smoothing(bug.shape[0], bug.shape[1], 1, 1, 181, 260, bug2)

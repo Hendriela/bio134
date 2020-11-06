@@ -1,3 +1,14 @@
+#%% Functions
+
+def test_square(a, b):
+    if a**2 < b:
+        print("the square of", a, "is smaller than", b)
+    else:
+        print("the square of", a, "is not smaller than", b)
+print(test_square(4, 17))
+
+
+#%% Genbank
 
 def genbank_to_fasta(filename):
 
@@ -44,4 +55,25 @@ def fasta_to_genbank(filename):
 
     with open(filename_new, 'w') as f:
         f.write(content)
+
+
+
+def fasta_to_genbank_Julian(filename):
+    # Load file
+    with open(filename) as f:
+        fasta = f.readlines()
+        SEQ = []
+        header = False
+        for line in fasta:
+            if header == False:
+                SEQ.append('>header')
+                header = True
+            else:
+                line = line.lower()
+                for i, el in enumerate(line):
+                    if i%60 == 0:
+                        SEQ.append(i-59)
+                    if i%10 == 0:
+                        SEQ.append(line[i - 9:i])
+    print(SEQ)
 
