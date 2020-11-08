@@ -28,6 +28,6 @@ def make_pairs(lys):
             pairs.remove(current_pair)
     return pairs
 
-
-l = ['ball','clock','glass','table']
-pair = make_pairs(l)
+if __name__ == '__main__':
+    l = ['ball','clock','glass','table']
+    pair = make_pairs(l)

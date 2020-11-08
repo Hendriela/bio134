@@ -66,26 +66,26 @@ def plot(x, y, lablex, labley, width):
     plt.ylabel(labley)
     plt.title('Dot plot with window size {}'.format(width))
 
+if __name__ == '__main__':
+    line1 = 'My care is loss of care, by old care done'
+    line2 = 'Your care is gain of care, by new care won'
 
-line1 = 'My care is loss of care, by old care done'
-line2 = 'Your care is gain of care, by new care won'
+    # test slyce()
+    d = slyce(line1, 5)
+    print(d[' care'])
 
-# test slyce()
-d = slyce(line1, 5)
-print(d[' care'])
+    # test match_warmup_1():
+    x, y = match_warmup_1([7, 2, 1, 4, 8, 9], [4, 3, 9, 8, 1, 2])
+    print(sum(x), sum(y))
 
-# test match_warmup_1():
-x, y = match_warmup_1([7, 2, 1, 4, 8, 9], [4, 3, 9, 8, 1, 2])
-print(sum(x), sum(y))
+    # test match_warmup_2():
+    x, y = match_warmup_2([[4, 5, 8], [3, 2], [6], [2, 9, 6]], [[9, 3], [8, 8], [5, 3, 5, 1], [7, 3]])
+    x1, y1 = match_warmup_2_with_mw1([[4, 5, 8], [3, 2], [6], [2, 9, 6]], [[9, 3], [8, 8], [5, 3, 5, 1], [7, 3]])
+    print(sum(x), sum(y))
+    print(sum(x1), sum(y1))
 
-# test match_warmup_2():
-x, y = match_warmup_2([[4, 5, 8], [3, 2], [6], [2, 9, 6]], [[9, 3], [8, 8], [5, 3, 5, 1], [7, 3]])
-x1, y1 = match_warmup_2_with_mw1([[4, 5, 8], [3, 2], [6], [2, 9, 6]], [[9, 3], [8, 8], [5, 3, 5, 1], [7, 3]])
-print(sum(x), sum(y))
-print(sum(x1), sum(y1))
+    # test match():
+    (x, y) = match(line1, line2, 5)
+    print(sum(x), sum(y))
 
-# test match():
-(x, y) = match(line1, line2, 5)
-print(sum(x), sum(y))
-
-plot(x, y, line1, line2, 5)
+    plot(x, y, line1, line2, 5)
