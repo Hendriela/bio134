@@ -14,16 +14,20 @@ for line in darwin:
     lengths += len(words[2])
 print(lengths/len(darwin))
 
-
-with open('.\Documents\Bio134\crick.txt') as file:
+#%% copy
+with open('crick.txt') as file:
     crick = file.readlines()
-
+print(crick)
 s = ''
 for line in crick:
     s = s + ' ' + line.strip()
-    
-crick_copy = open('.\Documents\Bio134\crick_copy.txt', 'w')
-crick_copy.write(s)
+
+for i in range(len(crick)):
+    crick[i] = crick[i].strip()
+print(crick)
+
+crick_copy = open('crick_copy.txt', 'w')
+crick_copy.write(crick)
 crick_copy.close()
 
 fyle = open('.\Documents\Bio134\crick_copy.txt')
@@ -33,13 +37,13 @@ fyle.close()
 
 #%% split and join
 s = 'dfkfje*jfdn*pwndnv*sfkjadjbvbjbajbfkaj*nkd*nvndlanakndndhnfajnja*lsdkjf*cevgfjh**nfe*en*m\r\n'
-s1 = s.split()[0].split('*')
+s1 = s.strip().split('*')
 s2 = "".join(s1)
 print(len(s2))
 
 #%% HTML
 
-with open('.\Documents\Bio134\headings.html') as file:
+with open('headings.html') as file:
     html = file.readlines()
     
 print(html[1])

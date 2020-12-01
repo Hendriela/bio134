@@ -88,5 +88,13 @@ print(max_pairs)
 fig, axes = plt.subplots(2,5)
 for idx, ax in enumerate(axes.ravel()):
     plt.sca(ax)
-    dp.plot(coords[idx][2], coords[idx][3], coords[idx][0], coords[idx][1], width)
+    name1 = coords[idx][0]
+    name2 = coords[idx][1]
+    pair_x = coords[idx][2]
+    pair_y = coords[idx][3]
+    dp.plot(pair_x, pair_y, name1, name2, width)
 
+s = 'Linda,Mark,Nathan,Daniela'
+lys = s.split(',')
+print(lys)
+['Linda', 'Mark', 'Nathan', 'Daniela']

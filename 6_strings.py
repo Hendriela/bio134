@@ -91,6 +91,21 @@ for key, value in person.items():
     else:
         death_dic[value[2]].append(key)
 
+death_dic = {}
+for key in person:
+    death_date = person[key][2]
+    if death_date in death_dic:
+        death_dic[death_date].append(key)
+    else:
+        death_dic[death_date] = [key]
+
+print(death_dic)
+
+    if current_value[2] not in death_dic.keys():
+        death_dic[current_value[2]] = [key]
+    else:
+        death_dic[current_value[2]].append(key)
+
 #%% reverse genetic code
 
 cdn = {}
