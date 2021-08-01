@@ -1,0 +1,47 @@
+Comment ID,Question Nr,Points,Comment String
+default,6,0.0,Initial points
+f6a25536,6,0.0,2. Incorrect
+16594284,6,10.0,1. Correct
+a09c80d7,6,0.0,0. No file or empty file submitted
+75441ca4,6,-1.0,3. Error
+d24118cd,6,0.0,4. Check again
+6c8f0042,6,0.5,d. open file ... correct
+139d995b,6,4.5,c. ranks ... correct
+6d1f8ea4,6,-1.0,a. function ... z- no function
+050ee93e,6,-1.0,c. ranks ... z- number of ranks hardcoded
+02f8d7a9,6,1.0,c. ranks ... initialized with correct keys
+976781f2,6,0.0,b
+a96b0ad7,6,0.0,c
+35341932,6,0.0,d
+ce76dfba,6,0.0,d. open file ... incorrect as did not close file
+8e25f999,6,0.0,a
+6ea1aa84,6,0.0,c. ranks ... incorrect or missing
+afa1cc80,6,0.0,d. open file ... correct but outside of function
+6a4c9878,6,-2.0,c. ranks ... z- ranks hardcoded by name
+60fc0669,6,0.0,e
+cc90681b,6,5.0,b0. lineages ... correct
+92f5ee66,6,0.0,b0. lineages ... incorrect or missing
+6da92343,6,0.5,b0. lineages ... failed attempt
+2db02abb,6,1.5,b1. keys ... correct
+aaddf655,6,0.0,b1. keys ... incorrect
+8b398e86,6,-0.5,b1. keys ... z- genome number not general. 100 missing
+9d02bce2,6,-0.5,b1. keys ... z- str instead of int
+01aa3813,6,3.5,b2. values ... correct
+711a5cce,6,0.0,b2. values ... incorrect
+ff5c0c8f,6,1.5,b2. values ... part1 ... contain all taxa
+9e940c3f,6,0.5,b2. values ... part2 ... taxa separated at semicolon
+6acef557,6,-0.5,b2. values ... part1 ... z- did not remove whitespaces
+7df2af5c,6,1.0,b2. values ... part3 ... contain species names with 2 words
+3fd8d26f,6,0.5,b2. values ... part4 ... of type list of strings
+65260e97,6,-0.5,b2. values ... part1 ... z- did not remove genome part
+e5516d52,6,-0.5,e. print ... no print statement
+908d2ea7,6,0.0,e. print ... did not print the required
+a3a902cb,6,-0.5,b2. values ... part1 ... z- not general
+a5a2d959,6,-1.0,b0. lineages ... z- small but crucial mistake  
+0420c152,6,-1.0,b0. lineages ... z- dimensions not general
+58a881e0,6,-1.0,b0. lineages ... z- no dictionary
+f1f8b84d,6,0.5,b1. keys ... zspecial ... str of the format genome_id
+269107af,6,-0.5,b0. lineages ... z- created additional entry
+cdff888a,6,-0.5,a. function ... z- no function call
+9af3fc79,6,0.5,b1. keys ... zspecial ... got the number but did not manage to use it
+db575d57,6,-0.5,a. function ... z- function incorrect

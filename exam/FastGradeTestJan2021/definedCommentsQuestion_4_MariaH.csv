@@ -1,0 +1,37 @@
+Comment ID,Question Nr,Points,Comment String
+default,4,0.0,Initial points
+2c67aad5,4,0.0,0. No file or empty file submitted
+24bf5ced,4,0.0,1. Incorrect
+25e4dc6c,4,10.0,2. Correct
+759ee726,4,0.0,3. Check again
+8ed67425,4,-1.0,4. Error
+b43a227b,4,3.0,a. Correct restructuring of rector attributes
+8aab18cd,4,5.0,b. Creates a list of lists of proper dimensions
+05420a1d,4,2.0,c. reversed order of elements
+1f1bc2d4,4,0.0,b0. does not create a list of lists or creates one with both dimensions wrong
+bc8da141,4,-2.0,b1. dimension of outerlist with loop but not general
+82bad807,4,-3.0,b2. hardcoded outerlist no loop
+15c15831,4,4.0,b4. dimension of innerlist wrong but outerlist correct
+15d4f953,4,0.0,c0. no attempt to reverse
+56b5b2b1,4,0.5,c1. Incorrect attempt to reverse
+3a10004c,4,10.0,2a. correct with use of sorted or reverse
+2f6ca88f,4,-0.5,c2. reversed order not general
+76f06cb1,4,-1.0,a1. Restructuring not general
+9bfc98f1,4,2.0,a2. Correct collection of attributes but wrong order
+ac1ae9cc,4,1.0,a3. Restructuring correct only for subset of rectors 
+dd04db65,4,2.0,c4. reversed order of elements with reverse or sort
+7578f92a,4,1.0,b3. dimension of outerlist wrong but innerlist correct
+fc8308fe,4,0.0,a
+c66b6a15,4,0.0,b
+3638f2ba,4,0.0,c
+a19e3cfc,4,0.0,a0 no or completely unsuccessful restructuring of rector attributes
+5ec73758,4,-1.0,c3. hardcoded reversed order no loop
+ce2b9c14,4,0.5,a4. correct collection of attributes but wrong order only for subset of rectors
+e5de9c3f,4,-0.5,b5. innerlist tuple instead of list
+57f267a0,4,0.5,a5. changed order but failed to match correct attributes
+15fe359a,4,0.0,d
+b9795b89,4,3.0,b7. dimension of outerlist wrong but with loop and general
+56ddb822,4,-0.5,d1. print statement missing
+943fb9b2,4,-0.5,d2. year formated as string
+d91e8669,4,-0.5,d3. additional list around output list
+41952ad2,4,-0.5,d0. correct output commented

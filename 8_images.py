@@ -8,6 +8,9 @@ Created on Tue Oct 20 10:38:57 2020
 import matplotlib.image as img
 import numpy as np 
 
+n_columns = h.shape[1]
+right_boundary = h[:, -1, 2]
+
 h = img.imread('hotspring_pattern.jpg')
 right = h[:,-1,2]
 upper = h[0,:,0]
@@ -40,9 +43,9 @@ smooth[1:-1,1:-1] = h[1:-1,1:-1] + h[2:,1:-1] + h[:-2,1:-1] + h[1:-1,2:] + h[1:-
     h[2:,2:] + h[0:-2,0:-2] + h[2:,0:-2] + h[0:-2,2:]
 smooth[1:-1,1:-1] = smooth[1:-1,1:-1]/9 
 
-print(smooth[5,499,0])
-print(smooth[181,260,1])
-print(np.mean(smooth))
+print('red', smooth[5,499,0])
+print('green', smooth[181,260,1])
+print('mean', np.mean(smooth))
 
 
 #%% Zoe
@@ -70,3 +73,35 @@ def smoothing(x, y, h, color, position1, position2, image):
     print(np.mean(img_new))
 
 smoothing(bug.shape[0], bug.shape[1], 1, 1, 181, 260, bug2)
+
+#Ana
+import numpy as np
+import matplotlib.pyplot as pl
+import matplotlib.image as img
+import matplotlib
+
+h = img.imread('stinkbug.png')
+# uint8 (0,255) or float32 (0.0,1.0)
+
+
+smooth = 1 * h
+smooth[1:-1, 1:-1] = h[1:-1, 1:-1] + h[2:, 1:-1] + h[:-2, 1:-1] + h[1:-1, 2:] + h[1:-1, :-2] + \
+                     + h[0:-2, 0:-2] + h[2:, 0:-2] + h[0:-2, 2:] + h[2:, 2:]
+
+smooth[1:-1, 1:-1] = smooth[1:-1, 1:-1] / 9
+
+print('red', smooth[5,499,0])
+print('green', smooth[181,260,1])
+print('mean', np.mean(smooth))
+
+# save image file
+matplotlib.image.imsave('Rbug.jpg', smooth)
+i = img.imread('Rbug.jpg')
+
+pl.imshow(i)
+pl.show()
+print('red', i[5, 499, 0])
+
+print('green',  i[181, 260, 1])
+
+print('mean', np.mean(i))

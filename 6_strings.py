@@ -13,6 +13,27 @@ target = riddle.partition('*****')[2].partition('#####')[0]
 for c in special:
     target = target.replace(c, '')
 
+
+# Ana
+xx = open("riddle.txt")
+dd = xx.read()
+xx.close()
+s2 = ""
+
+dd = dd.partition("*****")
+dd1 = dd[2]
+# print(dd1)
+# print(len(dd1))
+
+dd1 = dd1.partition("#####")
+dd2 = dd1[0]
+# print(len(dd2))
+
+for letter in dd2:
+    if letter in "abcdefghijklmnopqrstuvwxyz":
+        s2 += letter
+print(s2)
+
 #%% string formatting
 s = 'vTrXAXoWheCnXpDUclYfNPnSmFdZBanqCQcUFKayimnqTzMFjVxbpkrxLmvZDuYO'
 s1 = ''
@@ -135,6 +156,14 @@ cdn['gat'] = cdn['gac'] = 'D aspartic acid'
 cdn['gaa'] = cdn['gag'] = 'E glutamic acid'
 cdn['ggt'] = cdn['ggc'] = cdn['gga'] = cdn['ggg'] = 'G glycine'
 
+# genetic code
+s = 'atgagtaaaggagaagaacttttcactggagttgttccaattcttgttgaattagatggt'
+aacids = ''
+for i in range(0,len(s),3):
+    aacids += cdn[s[i:i+3]][0]
+print(aacids)
+
+#reverse genetic code
 aacid = {}
 for codon, acid in cdn.items():
     ac = acid[2:]

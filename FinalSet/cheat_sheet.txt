@@ -1,0 +1,199 @@
+CHEAT SHEET
+
+-------------------------------------------------------
+Printing
+
+>>>print(5 + 3)
+8
+
+>>>print("Cat" + "Dog")
+CatDog
+
+>>>print("Cat", "Dog")
+Cat Dog
+
+>>>print("hello "*4)
+hello hello hello hello
+
+# no newline after output:
+>>>print(x, end=" ")
+
+--------------------------------------------------------
+Operators
+
+#arithmetic operators:
+=, +, -, *, /, +=, -=, *=, /= (+: also concatenate)
+// #integer division
+** #exponential
+%  #remainder
+
+#comparison operators:
+==, >, <, >=, <=, !=, not
+
+#logical operators:
+and, or, not
+
+--------------------------------------------------------
+Types
+
+type()
+float(), int(), str()
+
+--------------------------------------------------------
+Import libraries
+
+import ...
+import ... as ...
+from ... import ...
+
+--------------------------------------------------------
+Flow control
+
+if:
+elif:
+else:
+
+for x in myList:
+for x in range(1,5):
+for x in range(10,0,-1):
+if x in myList:
+
+
+while:
+
+break
+continue
+
+def myFunction():
+    return
+
+---------------------------------------------------------
+Lists
+
+myList=[]
+myList.append()
+myList.extend()
+myList.insert()
+myList.remove()
+del
+myList.pop()
+myList.index()
+myList.sort()
+myList.reverse()
+myList[1:5]
+myList[1:-1]
+myList[:-1]
+myList[:]
+myList[0][2]
+sorted()
+enumerate()
+zip()   
+
+----------------------------------------------------------
+Input / output
+
+input()
+open()
+.read()
+.readline()
+.readlines()
+.write()
+.close()
+
+----------------------------------------------------------
+Tuples
+
+myTuple=("someString",5)
+a,b=5,6
+
+----------------------------------------------------------
+Formatting strings
+
+.upper()
+.lower()
+.split()
+.strip()
+''.join()
+.partition()
+.replace()
+
+-----------------------------------------------------------
+Number formatting
+
+>>> t = 10
+>>> ('{:5d} degrees').format(t)
+'   10 degrees'
+
+>>> ('{:<5d} degrees').format(t)
+'10    degrees'
+
+>>> ('{:05d} degrees').format(t)
+'00010 degrees'
+
+>>> ('{:8.2f} degrees').format(t)
+'   10.00 degrees'
+
+>>> ('{:9.2e} degrees').format(t)
+' 1.00e+01 degrees'
+
+>>> a = 22/3
+>>>('{},{:.2f}').format(t,a)
+'10,7.33'
+
+-----------------------------------------------------------
+Dictionaries
+
+myDict={}
+myDict['aKey']='aValue'
+myDict={'aKey': 'aValue'}
+.keys()
+.values()
+del
+
+-----------------------------------------------------------
+Miscellaneous
+
+global
+len()
+'\t' #tab character
+'\n' #end of line
+\ #line continuation
+sum(), max(), min()
+copy.deepcopy()
+
+------------------------------------------------------------
+Numpy functions
+
+numpy.linspace()
+numpy.array()
+numpy.zeros() # eg numpy.zeros(3) or 
+              # numpy.zeros(shape=(3,4), dtype=float)
+myArray.shape
+numpy.random.seed()
+numpy.random.randint(1,4) #returns 1, 2 or 3
+numpy.bincount()
+numpy.nan
+numpy.set_printoptions(threshold=numpy.nan) # for printing 
+                                            # full arrays
+newArray = myArray.astype(int)
+
+------------------------------------------------------------
+Graphics
+
+import matplotlib.pyplot as plt
+plt.errorbar(x,y,yerr=dy,marker='o',linestyle='none',\
+            label='My Label')
+plt.plot(x,y,'o',color='yellow')
+plt.xlim(a,b), plt.ylim(a,b)
+plt.xlabel('My x-label'), plt.ylabel('My y-label')
+plt.legend()
+plt.title('My title')
+plt.show()
+plt.figure() #practical when drawing several figures
+plt.subplot(1,1,1,axisbg='black')
+ax = plt.gca()
+ax.set_aspect('equal')
+ax.xaxis.set_visible(False), ax.yaxis.set_visible(False)
+plt.imshow(myArray)
+matplotlib.image.imread('myFile')
+matplotlib.image.imsave('myFile', myArray)

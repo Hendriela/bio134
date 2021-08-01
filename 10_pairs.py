@@ -19,7 +19,7 @@ def make_pairs(lys):
         for j in lys:
             pairs.append([i, j])
 
-    # Loop through the pairs list backwards (not avoid indexing errors while deleting
+    # Loop through the pairs list backwards (to avoid indexing errors while deleting)
     for i in range(len(pairs)-1, -1, -1):
         # Save the current pair
         current_pair = pairs[i]

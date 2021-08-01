@@ -22,12 +22,12 @@ l_before = import_data('bif_before.txt')
 for i in l_before:
     if i[0] == 5 and i[1] == 'V3':
         bif_before = i[2]
-        break
+        # break
 
 for i in l_after:
     if i[0] == 5 and i[1] == 'V3':
         bif_after = i[2]
-        break
+        # break
 
 print(bif_after/bif_before)
 
@@ -74,7 +74,6 @@ print(a_before[:,4])
 a_after = make_array(l_after)
 ratio = a_after[rays['V3'],4]/a_before[rays['V3'],4]
 
-
 #%% Calculations and plotting
 
 ratios = a_after/a_before
@@ -106,3 +105,12 @@ def names_of_rays(rays):
     return ray_names
 
 plotting(ratios, means, names_of_rays(rays))
+
+#%% Ana
+lyst=l_before
+dyct={}
+dyct2={}
+for line in lyst:
+    dyct2={line[0]:line[2]}
+    dyct[line[0]]=dyct2
+    print(dyct2)

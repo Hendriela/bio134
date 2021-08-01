@@ -1,0 +1,30 @@
+Comment ID,Question Nr,Points,Comment String
+default,5,0.0,Initial points
+86e04954,5,10.0,1a Correct
+3f53f21b,5,0.0,1b Incorrect
+9fc3ff80,5,-1.0,1c Throws error
+21364ba9,5,1.5,3a Correct selection of upper case words
+e3584462,5,3.5,2a Correct list of words and complete removal of special characters
+d7371dff,5,2.0,2d Splits poem but little or no consideration of special characters
+2a91756a,5,1.5,4a Correct number value
+761b4613,5,0.0,0a Check again
+70567765,5,0.0,1
+a8746d8a,5,0.0,2
+b109195f,5,0.0,3
+e908870c,5,0.0,4
+4ec41c97,5,0.0,1d No file or empty file submitted
+1e3dd77d,5,1.0,5a Correct format of word plus one space
+8cb13954,5,0.0,5
+392d1813,5,0.0,6
+870a1a01,5,1.0,6a Correct number of stars
+ec2ea0e1,5,0.0,7
+257cf0dc,5,1.5,7a Correct alignment of numbers
+d8fc7f60,5,2.5,2c Removal of all special characters which appear in THIS poem
+23e8fda6,5,-0.5,3b Selection not general or specific enough
+40eebf28,5,-0.5,7b Incorrect number of spaces before or after
+38f16d8c,5,3.0,2b Removal of most special characters and or almost correct list of words
+4efba8cd,5,-0.5,4b Number value not general enough
+ff25603c,5,0.5,7c Incorrect alignment but space between stars and number
+4ad299d7,5,-0.5,3c Wrong order
+dea86ade,5,-0.5,3d Words not whole e.g. only first letter given
+7dca0313,5,-0.5,7d Alignment not general enough
