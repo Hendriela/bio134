@@ -54,6 +54,21 @@ def get_data(x, y):
         distances.append((cx**2 + cy**2)**0.5)
     return np.array(areas), np.array(centroids), np.array(distances)
 
+x = []
+y = []
+
+areas = []
+for cell in range(len(x)):
+    curr_x = x[cell]        # Temporarily save x and y coordinates for the current cell vertices
+    curr_y = y[cell]
+    a = 0                   # Initialize the starting area for the current cell
+    for i in range(len(curr_x)):
+        # Here is the formula implemented. It is executed once per vertex of each cell
+        a += curr_x[i] * curr_y[i-1] - curr_y[i] * curr_x[i-1]            # Sum up area for current cell
+
+    a /= 2                 # Apply factor
+    areas.append(a)        # Append the area of the current cell
+
 
 def get_centroid(x, y, a):
     centroids = []
@@ -189,3 +204,23 @@ prod = 1
 for m in vertex_numbers:
     prod *= x_positions[m]
 print(prod)
+
+import pickle
+import mysql.connector
+my_connect = mysql.connector.connect(
+      host="130.60.53.47",
+      user="hheise",
+      passwd="Crushable-Yapping9-Amnesty",
+      database="common_img"
+    )
+import pandas as pd
+import os
+
+
+def get_data(table):
+    dic = pd.read_sql(f"SELECT * FROM {table} WHERE day = '2021-08-02'", my_connect).to_dict()
+
+    backup_path = r'W:\Neurophysiology-Storage1\Wahl\Datajoint\backups\restore_del_entries'
+    with open(os.path.join(backup_path, f'entry_{table}.pickle'), 'wb') as handle:
+        pickle.dump(dic, handle)
+    return dic

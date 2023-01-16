@@ -1,0 +1,105 @@
+General advice for solving Python questions:
+
+- First, go through all questions quickly. As soon as you reach a point where you are struggling with one question, move
+    on to the next. This way you get at least all "easy" points for all questions. After you are done with this, go back
+    to questions where you were struggling
+- Read through the ENTIRE question text before starting to code. Pay especially attention to the assumptions you are
+    allowed to make (very important, as they can make your code less complicated), and how general your code has to be
+    (less important, as it makes your code more complicated, and you can already get many points with a less-generalized
+    solution. See the first point to decide if its worth your time making your solution more general, or if it is better
+    to move on to the next question).
+- If you have difficulties trying to understand what you are supposed to do, have a close look at the input variables
+    and the required output of your program/function (should always be written in the question text), and find out how they 
+    relate to one another. This is sometimes more helpful to understand what your program is supposed to do rather than a 
+    long wall of text.
+- Spend some time going through the necessary steps in your head before starting to code (and write the steps as
+    comments in your code, and stop regularly to remember the context of your current code (for-loop, if-clause,
+    variable etc.). It is easier to find errors in your code when you keep in mind what the ultimate goal is.
+- Use descriptive variable names, that reflect their meaning in the context of the question
+    (e.g. "for nucleotide in rna_sequence:" instead of "for i in lyst:"). This helps you keep your code and your mind
+    organized (see point above).
+- When you have a long, complicated line of code, with lots of nested indexing and function calls, separate them into
+    smaller, distinct intermediate variables. This helps keep your mind and code clean, and simplifies finding errors.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+Tips for bug fixing: What to do if your code does not work?
+- When your code raises an error, pay close attention to the error message. They are not always accurate (depending on
+    the type of error), but can be a starting point to debugging. The error message tells you in which line of code the
+     error occurred, as well as the type of error, with some basic description about what went wrong. These can seem
+     cryptic, and you dont have to understand every word, but usually you can get the gist of it to understand what is
+     going wrong. For example: Type Error usually means that you try to do something that this specific type is not
+     able to do (e.g. append to a string or add an integer to a string) This usually means that one of your variables
+     has the wrong type (which is often fixable with int(variable) or str(variable)).
+
+
+ - When your code does not raise an error, but delivers a wrong result, try to figure out what exactly went wrong and
+    where the faulty line of code is:
+
+    > Are the numbers/variables in the output correct, just the formatting is off? -> check the print statement
+
+    > Is the first line correct, but the others are  wrong? -> check the for-loop and possible included if-clauses
+
+    > Does summation or finding minima/maxima work at the first, but not the other elements? -> check where you reset the counter variable
+
+    > Is your output empty? -> See where you fill your output variable (e.g. append to a list), and under which condition (e.g. if-clause) it is called.
+				It is likely that the if-clause is formulated wrong, so your append is never actually executed.
+
+    > Your output has too many or too few elements? -> Check the loop in which you are filling your output variable, and how many times you iterate
+							through it (for-loop) or what your exit condition is (while-loop)
+
+    Once you find the line where the problem is, first check if the line itself has a bug in it. If not, go upwards
+    through your code to find when exactly this line is called. Check the if-clauses and for-loops, where the problematic
+    line is in, and find if the line is called at a time or condition where it should not have been.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Python-specific tips:
+- Different brackets:
+    > Parentheses "()" are used for two things:
+        1. Function calls. Whenever you call a function like len(), strip(), append() etc., you need the parentheses,
+            which can include input arguments. Some functions (like readlines or close) work without arguments, some
+            have optional arguments (like split: you can define a specific character where it should split, but if you
+            do not provide an input argument, it has a default value, for the split function its the space), and some
+            need an input argument (like len, you have to define which list or dict you want to know the number of elements of)
+        2. Initializing tuples. This is less important and probably you will not need this in the exam, but for completeness:
+            Tuples are initialized like this: my_tuple = (var1, var2, var3)
+    > Square brackets "[]" are also used for two things:
+        1. Indexing. ALL indexing is done with square brackets. It does not matter whether you want to get a certain
+            element of a list, tuple or array, a value from a dict or a character from a string, all of this is indexing
+            and has to be done with square brackets, never parentheses.
+        2. Initializing lists. As you know, lists are initialized like this: my_list = [var1, var2, var3]. It is easy to
+            confuse these square brackets with indexing square brackets, so be careful. They do completely different things.
+    > Curly brackets "{}" are used for only one thing:
+        1. Initializing dicts.
+            You can initialize an empty dict like this: my_dict = {} and fill in the key-value pairs
+                later, if you do not know exactly which keys should be included in the dict at the start of your program
+                (e.g. when you are collecting unique words from a long list of words).
+            You can also initialize a dict with key-value pairs already there. This is possible if you know at the start
+                of your program already exactly which keys and values are needed (CHECK THE ASSUMPTIONS OF THE QUESTION!)
+                and can save you a lot of code complexity. For example, if you have to record the positions of nucleotides
+                in a long DNA sequence, you can initialize the dict like this:
+                nuc_positions = {"A"=[], "T"=[], "C"=[], "G"=[]}
+                You know that these are all the keys you will need (because the string is a DNA sequence which can only
+                include these four nucleotides) This way all keys have already an empty list associated with them, and
+                you can just append the position of the current nucleotide while you loop through the sequence string.
+- Strings behave a lot like lists of characters. You can loop through a string like this: "for letter in string:", and
+    you can index strings to get a certain letter or subset of letters the same way you are indexing a list. The only
+    difference is that you cannot use "append()" with strings, you have to use the + or += sign.
+- Indexing: You index lists with one set of square brackets ("first_element = my_list[0]"), nested lists with subsequent
+    sets of square brackets ("first_el_of_third_sublist = my_nested_list[2][0]"), and arrays with one set of square
+    brackets with one position for each dimension of the array ("my_pixel = my_two_dimensional_array[row, column]").
+    You NEVER have nested indexing like this: "bad_indexing = my_nested_list[2[0]]"
+- For-loops: When writing the for-loop, think about what you need in the loop:
+    > if you need the position of the elements (e.g. to find an element at the same position in a different list, or
+        to change the element of the looped list), use range: "for index in range(len(my_list)):"
+    > if you need the value of the elements (e.g. if you have to sum up the numbers in a list), use a direct loop:
+        "for element in my_list:". Name the iterator accordingly, like "index" or "position" for a range for-loop and
+	"element", "letter" or "word" (depends on the context of the question) for a direct for-loop, to help you remember
+	what the iterator actually is.
+    > if you need both (e.g. to record the position of positive numbers in a list of integers), use enumerate:
+        "for index, value in enumerate(my_list):".
+    > if you are unsure what you need, use enumerate. It does not matter if in the end you do not need both the position
+        and the value, we do not care about the lost efficiency.
+
+
+

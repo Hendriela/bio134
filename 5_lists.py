@@ -37,3 +37,13 @@ if len(dnaL) > len(rnaL):
     print(dnaL)
 else:
     print (rnaL)
+
+l = [['1', '5', '6'], ['8', '1'], ['5', '4', '4', '2']]
+for el in l:
+    el[0] = int(el[0])
+print(l)
+
+    for s in range(len(el)):
+        el[s] = int(el[s])
+print(l)
+

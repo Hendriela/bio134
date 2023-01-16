@@ -27,8 +27,8 @@ from numpy import linspace, pi, cos, sin
 growth_factor = 1.54
 t = linspace(0, 5)
 
-x = (growth_factor ** (2 * t)) * cos(2 * pi * t)
-y = (growth_factor ** (2 * t)) * sin(2 * pi * t)
+x = (growth_factor ** (4 * t)) * cos(2 * pi * t)
+y = (growth_factor ** (4 * t)) * sin(2 * pi * t)
 
 pl.plot(x, y)
 
