@@ -1,0 +1,35 @@
+Comment ID,Question Nr,Points,Comment String
+default,2,0.0,Initial points
+1cc79d6f,2,0.0,2. Incorrect
+e220311e,2,10.0,1. Correct
+a8307793,2,0.0,0. No file or empty file submitted
+fbd1b5b8,2,-1.0,3. Error
+331a6a7c,2,0.0,4. Check again later
+41f5a327,2,3.0,a. complete dictionary initialized
+9cd04754,2,2.0,a1. created entry only for rolled scores
+1f266bd3,2,6.0,b. values are lists of roll numbers
+6a83510a,2,2.0,b1. values contain last roll number only as integer
+2cb58881,2,2.0,b2. values contain only first roll nubmer as integer
+e3a1f199,2,1.0,c. correct number of tries
+58201057,2,0.5,c1. n plus 1 tries
+ecc155ed,2,-0.5,a2. keys are str instead of int
+b5ea8043,2,0.0,b0. values completely wrong
+caa71974,2,0.0,a
+1808a1bb,2,0.0,b
+e9390383,2,0.0,c
+20e2ad01,2,-0.5,c0. number hardcoded
+aa3cbfdd,2,3.0,b1. values contain last roll number only in list
+258b104d,2,3.0,b2. values contain only first roll number in list
+4534d6ec,2,0.0,a3. dictionary initialized without loop. hardcoding. 
+596ab60f,2,-0.5,a2. entry with key 3 and empty list as value hardcoded
+cac05527,2,-0.5,5. Output not printed
+df7100d7,2,-0.5,a2. list for non-rolled scores contains zero
+1768dc07,2,0.5,c2. n min 1 tries
+390cef15,2,-0.5,c3. trial nr. starting from 0 instead of 1
+9096b0a4,2,0.5,b0. reasonable attempt but failed
+cf349f8d,2,0.0,6. dictionary incorrect or missing
+c1a94cf0,2,3.0,7. created the inverse of the requested dictionary as swapped keys and values. 
+11a29794,2,0.0,c4. wrong number of tries
+3d682f06,2,1.0,a1. complete dictionary initialized but with some string instead of empty list
+6db3d4dd,2,4.0,b3. first roll is missing from the list rest ok
+6165ec88,2,-0.5,a2. additional key 0

@@ -162,9 +162,10 @@ def analyze_disc(folder, size):
     plotting(area, dist, size)
     draw_disc(x, y, area, size)
 
+# Call entire program
+analyze_disc('wingdisc\\wd-small', 'small')
 
-
-#%% test
+#%% tests für Autochecker
 
 cell_vertex = get_list('wingdisc\\wd-large\\cv.txt')
 vertex_pos = get_list('wingdisc\\wd-large\\vp.txt')
@@ -189,9 +190,6 @@ plotting(area, dist)
 t, p = t_test(area, dist)
 print('t-test: t={:.2f}, p={:.2e}'.format(t, p))
 
-#%% Whole program
-
-analyze_disc('wingdisc\\wd-small', 'small')
 
 #%% warm-ups
 

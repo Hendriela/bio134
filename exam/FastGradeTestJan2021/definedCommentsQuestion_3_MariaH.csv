@@ -1,0 +1,31 @@
+Comment ID,Question Nr,Points,Comment String
+default,3,0.0,Initial points
+ec05ffa3,3,0.0,2. Incorrect
+7dc4d445,3,10.0,1. Correct
+c17401c3,3,-0.0,0. No file or empty file submitted
+dd458450,3,-1.0,3. Error
+8591410b,3,-0.0,4. Check again later
+75f37887,3,5.0,a. function correct. args passed and used and func call correct
+df3a40d3,3,1.0,a2. argument passed but unused
+97087d8d,3,0.0,a4. return incorrect
+8aaf41cc,3,2.5,b. maximum correct
+38c9ad52,3,2.5,c. minimum correct
+2d84affb,3,0.0,c0. minimum incorrect
+7d70f5eb,3,0.0,b0. maximum incorrect
+3805d352,3,1.0,b1. maximum incorrect because variable initialized within loop
+731a0b01,3,1.0,c1. minimum incorrect because variable initialized within loop
+4bb9e569,3,0.0,a0. function incorrect or no function
+87a399d3,3,0.0,a
+be029471,3,0.0,b
+041e67a8,3,0.0,c
+a28824ec,3,0.0,z
+e0f6c101,3,0.0,b2. maximum correct but used max built-in function
+daa3bbb1,3,0.0,c2. minimum correct but used min built-in function
+28056b34,3,-0.5,a5. min and max order switched
+a57931a9,3,2.5,a3. return correct
+f3751f59,3,2.5,a1. argument correctly passed and used
+ab5905f0,3,0.5,b3. maximum correct but used sort built-in function
+1ec55cf8,3,0.5,c3. minimum correct but used sort built-in function
+9f56bcfc,3,-1.0,c4. minimum not general
+d5c7010a,3,1.0,c2. minimum incorrect because elif instead of if
+8b6c4b04,3,-2.0,a6. function call incorrect

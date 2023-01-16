@@ -1,0 +1,100 @@
+genome_31 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_67 Bacteria
+genome_64 Bacteria
+genome_79 Bacteria;Firmicutes;Clostridia;Clostridiales;Ruminococcaceae;Ruminococcus;Ruminococcus champanellensis
+genome_23 Bacteria
+genome_35 Bacteria
+genome_7 Bacteria
+genome_72 Bacteria;Tenericutes;Mollicutes;Anaeroplasmatales
+genome_20 Bacteria
+genome_15 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_90 Bacteria;Bacteroidetes;Bacteroidia;Bacteroidales
+genome_30 Bacteria;Proteobacteria;Gammaproteobacteria;Pseudomonadales;Moraxellaceae;Acinetobacter
+genome_60 Bacteria;Bacteroidetes;Bacteroidia;Bacteroidales
+genome_11 Bacteria
+genome_99 Bacteria;Spirochaetes;Spirochaetia;Spirochaetales;Spirochaetaceae;Treponema;Treponema berlinense
+genome_68 Bacteria;Firmicutes;Clostridia;Clostridiales;Ruminococcaceae
+genome_42 Bacteria
+genome_38 Bacteria
+genome_51 Bacteria;Firmicutes;Erysipelotrichia;Erysipelotrichales;Erysipelotrichaceae
+genome_73 Bacteria;Firmicutes;Erysipelotrichia;Erysipelotrichales;Erysipelotrichaceae
+genome_50 Bacteria;Bacteroidetes;Bacteroidia;Bacteroidales
+genome_33 Bacteria
+genome_4 Bacteria
+genome_66 Bacteria;Spirochaetes;Spirochaetia;Spirochaetales;Spirochaetaceae;Treponema;Treponema berlinense
+genome_16 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_44 Bacteria;Firmicutes;Erysipelotrichia;Erysipelotrichales
+genome_26 Bacteria
+genome_83 Bacteria
+genome_61 Bacteria
+genome_54 Bacteria
+genome_32 Bacteria;Proteobacteria;Gammaproteobacteria;Enterobacterales;Yersiniaceae
+genome_24 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_28 Bacteria;Spirochaetes;Spirochaetia;Spirochaetales;Spirochaetaceae;Treponema;Treponema berlinense
+genome_75 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_57 Bacteria;Proteobacteria;Gammaproteobacteria;Pasteurellales;Pasteurellaceae;Pasteurella;Pasteurella oralis
+genome_39 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_80 Bacteria;Spirochaetes;Spirochaetia;Spirochaetales;Spirochaetaceae;Treponema;Treponema succinifaciens
+genome_21 Bacteria
+genome_88 Bacteria;Proteobacteria;Gammaproteobacteria;Pseudomonadales;Pseudomonadaceae;Pseudomonas
+genome_3 Bacteria;Firmicutes;Clostridia;Clostridiales;Eubacteriaceae;Eubacterium;Eubacterium ramulus
+genome_47 Bacteria;Firmicutes;Bacilli;Bacillales
+genome_78 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_12 Bacteria;Firmicutes;Clostridia;Clostridiales;Lachnospiraceae
+genome_84 Bacteria
+genome_10 Bacteria
+genome_18 Bacteria
+genome_63 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_95 Bacteria
+genome_92 Bacteria
+genome_25 Bacteria
+genome_14 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_17 Bacteria
+genome_2 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_81 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_56 Bacteria
+genome_70 Bacteria
+genome_62 Bacteria;Firmicutes;Clostridia;Clostridiales;Eubacteriaceae
+genome_13 Bacteria
+genome_98 Bacteria;Spirochaetes;Spirochaetia;Spirochaetales;Spirochaetaceae;Treponema;Treponema succinifaciens
+genome_34 Bacteria
+genome_52 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_69 Bacteria
+genome_9 Bacteria
+genome_65 Bacteria;Bacteroidetes;Bacteroidia;Bacteroidales
+genome_85 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_58 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_59 Bacteria
+genome_37 Bacteria
+genome_96 Bacteria
+genome_8 Bacteria
+genome_6 Bacteria
+genome_5 Bacteria;Proteobacteria;Gammaproteobacteria;Pseudomonadales;Moraxellaceae;Acinetobacter
+genome_94 Bacteria;Bacteroidetes;Bacteroidia;Bacteroidales
+genome_46 Bacteria;Proteobacteria;Gammaproteobacteria;Aeromonadales;Succinivibrionaceae
+genome_45 Bacteria
+genome_53 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_27 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_55 Bacteria;Bacteroidetes;Bacteroidia;Bacteroidales
+genome_43 Bacteria;Bacteroidetes;Bacteroidia;Bacteroidales
+genome_89 Bacteria;Firmicutes;Clostridia;Clostridiales;Ruminococcaceae;Ruminiclostridium;[Eubacterium] siraeum
+genome_22 Bacteria
+genome_97 Bacteria
+genome_87 Bacteria;Spirochaetes;Spirochaetia;Spirochaetales;Spirochaetaceae;Treponema;Treponema berlinense
+genome_49 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_91 Bacteria;Proteobacteria;Gammaproteobacteria;Aeromonadales;Succinivibrionaceae
+genome_77 Bacteria;Proteobacteria;Gammaproteobacteria;Enterobacterales;Enterobacteriaceae
+genome_93 Bacteria;Firmicutes;Clostridia;Clostridiales;Lachnospiraceae
+genome_71 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_40 Bacteria;Bacteroidetes;Bacteroidia;Bacteroidales;Prevotellaceae
+genome_36 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_100 Bacteria
+genome_86 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_29 Bacteria
+genome_48 Bacteria
+genome_19 Bacteria
+genome_82 Bacteria;Firmicutes;Clostridia;Clostridiales;Ruminococcaceae
+genome_1 Bacteria;Firmicutes;Clostridia;Clostridiales
+genome_76 Bacteria;Spirochaetes;Spirochaetia;Spirochaetales;Spirochaetaceae;Treponema;Treponema succinifaciens
+genome_74 Bacteria;Firmicutes;Clostridia;Clostridiales;Lachnospiraceae
+genome_41 Bacteria

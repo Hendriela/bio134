@@ -1,0 +1,35 @@
+Comment ID,Question Nr,Points,Comment String
+default,7,0.0,Initial points
+12f1443d,7,0.0,0. No file or empty file submitted
+c8e2480e,7,0.0,1. Incorrect
+bb09a1e9,7,-1.0,2. Error when running the code
+0ef10912,7,0.0,a
+cf215a7a,7,1.0,a1. Cell numbers ... correct and extracted with general code
+fa64fc9b,7,0.0,a2. Cell numbers ... hardcoded as 30 and 38
+e370e9c1,7,0.5,a4. Cell numbers ... incorrect but correct elements were used to extract them in a general way
+2a9d1621,7,0.0,a3. Cell numbers ... not calculated
+2fcb24a1,7,0.0,b
+505a5a9b,7,3.0,b1. Cell area ... correct and extracted with general code
+df811191,7,0.0,c
+64b827b8,7,0.0,c1. Mean intensities ... not calculated
+d7f60636,7,0.0,0. File only contains given array
+4814e422,7,2.0,b2. Cell area ... correct but code works only for two cells
+4d3f091d,7,0.0,b5. Cell area ... not calculated
+b1495b15,7,0.0,d
+63f08bd6,7,0.0,d1. Cell circumference ... not calculated
+9aa9fe3e,7,2.0,d2. Cell circumference ... correct and extracted with general code
+365e12d0,7,1.0,d3. Cell circumference ... correct but code works only for two cells
+f151ed5a,7,4.0,c2. Mean intensities ... correct and extracted with general code
+dfcf7546,7,3.0,c3. Mean intensities ... correct but code works only for two cells
+d0a44c28,7,0.0,888 Correction ... Grading not complete yet
+d97e4e76,7,0.0,888 Correction ... Flag to debug code by hand
+a6b225b3,7,0.0,e
+5431a2c5,7,0.0,e4. Output ... more or less correct format
+4081edf3,7,1.0,c4. Mean intensities ... calculated for whole cell instead of inside and boundary
+04d8f4cd,7,1.0,b4. Cell area ... incorrect but element to go though image pixel by pixel correct
+11690826,7,2.0,c7. Mean intensities ... incorrect but contains element to compare each pixel with 4 to 9 closeby pixels
+989ea493,7,-0.5,e5. Output ... statement is missing
+a983d8eb,7,0.0,d4. Cell circumference ... incorrect calculation
+90c542c5,7,2.0,b3. Cell area ... incorrect but general solution with only a minor mistake
+e12ab6fb,7,3.0,c5. Mean intensities ... incorrect but inside and boundary pixels were correctly identified
+8aaf69fd,7,2.5,c6. Mean intensities ... incorrect but all calculations are correct except for small mistake with neighboring pixels

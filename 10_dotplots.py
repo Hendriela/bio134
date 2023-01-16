@@ -87,5 +87,5 @@ if __name__ == '__main__':
     # test match():
     (x, y) = match(line1, line2, 5)
     print(sum(x), sum(y))
-
+    plt.figure()
     plot(x, y, line1, line2, 5)

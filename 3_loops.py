@@ -34,7 +34,7 @@ for n in range(500):
 print('Max', maximum)
 
 import numpy.random as rd
-rd.seed(1)
+rd.seed(15)
 counter = []
 maximum = 0
 for n in range(1000):

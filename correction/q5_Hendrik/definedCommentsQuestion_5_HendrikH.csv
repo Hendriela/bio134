@@ -1,0 +1,68 @@
+Comment ID,Question Nr,Points,Comment String
+default,5,0.0,Initial points
+cbc194df,5,-1.0,3. error
+010ddc4b,5,10.0,1. correct
+652d18cc,5,0.0,0. no or empty file submitted
+af5f1b7a,5,0.0,2. incorrect
+23adef6b,5,0.0,4. check again later
+4862a6ce,5,0.0,a. 
+d186377b,5,4.0,a. sorting correct
+b1b694f6,5,0.0,d.
+a2406489,5,1.5,c. 1st line correct - different from the rest
+9cb30539,5,1.0,d. spacing correct
+f6bfe15e,5,0.5,d1. spacing partly correct - 1-2 mistakes
+7ae29554,5,0.0,a0. no programmatic sorting or unsuccessful attempt
+6bc6121e,5,0.0,f.
+2c8d9ddf,5,0.5,g. 3rd filler dots correct - should be 20 or length of 1st line filler
+3a26824e,5,0.0,e.
+0bf512ce,5,0.0,e1. 1st filler dots missing or do not vary with planet name width
+f422b636,5,0.0,f0. 2nd filler dots are missing
+af4a52ea,5,0.0,f1. wrong number of 2nd filler dots or not constant
+fb27ce2f,5,0.5,e0. 1st filler dots missing - e.g. spaces instead of dots - but vary in width
+15af8a2e,5,0.0,c.
+1ba8df6b,5,0.5,f. 2nd filler dots correct - should be 14 or length of 1st line filler
+c329b375,5,1.5,e. 1st filler dots correct - should vary with planet name width
+c7bab667,5,0.0,d0. spacing incorrect - 3-5 mistakes
+200b0399,5,0.0,g1. wrong number of 3nd filler dots or not constant
+b495bcfe,5,0.0,g0. 3rd filler dots are missing
+5106b0f6,5,0.0,b.
+4be02869,5,6.0,b. output format completely correct
+1a9fe7f8,5,0.5,b1. vertical blocks correctly aligned
+f5cb6c69,5,0.0,b0. no output or completely incorrect format - e.g. printed list
+d2b138b2,5,0.0,g.
+275c2f6c,5,0.0,c0. all lines contain filler dots
+7f3933cb,5,0.0,0. weiiird
+76abffa7,5,1.0,e3. varying but wrong number of 1st filler dots
+3287b3e7,5,0.0,c1. all lines contain filler sentences
+6d831bf9,5,1.0,c3. 1st line filler sentences are off or have typos
+72149c92,5,0.0,h. 
+f79c6b11,5,1.0,h. number formatting correct - 6 and 10 digits right aligned
+31e17937,5,0.5,h1. one number missing or incorrectly formatted
+40aad308,5,0.0,h0. number formatting incorrect or missing
+fd5486e7,5,0.5,c4. duplicated 1st line
+c795ec2a,5,-1.0,z1. error - nested list requires two indices
+63b7a1bc,5,0.0,z.
+29ef2cd4,5,-0.5,y2. typo in input data - Uranus diameter should be 50724 not 5072
+289438ea,5,-0.5,y3. 1st line should be different - with or without sorting - and not fixed for a specific planet
+37262bd6,5,-0.5,y4. 1st line is missing 1st filler dots
+e775285c,5,0.5,e2. 1st filler dots vary with both planet name and diameter width
+c391906c,5,0.0,c2. 2nd and 3rd fillers are missing completely
+f5c62ea5,5,0.0,z2. error - comma instead of asterisk in 2nd print command
+9ecbbcfc,5,-1.0,z3. error - diam and dist need to be strings for printing
+e16d06a8,5,-0.5,z0. timed out - sorting via maximum distance loop ... approx 800 million iterations
+685e5e3c,5,-1.0,z4. error - variable not properly defined and indexed in 1st line print command 
+9a36d65b,5,-1.0,y0. missing or too many planets in output
+7bd223c6,5,-0.5,y5. additional index numbers at line ends
+94a688d1,5,-0.5,y1. redefining input causes missing planets in output
+7d29e820,5,0.0,y.
+433167cb,5,-0.5,y6. additional dot after diameter and distance
+ab6fdddc,5,-2.0,y7. missplaced numbers in 1st line and each entry printed thrice
+b259e2a0,5,0.5,h2. numbers formatting correct but left aligned
+c0e5a989,5,0,5. use of lambda function - generally good at programming or maybe found on internet
+3e2f18a5,5,0,e4. 1st filler dots correct but hardcoded instead of varying with planet names
+ae5a16fb,5,1.5,a1. only distance sorted and not used in output - or - sorted list is incomplete
+647adc2f,5,-1.0,z5. timed out - inserting something into a list while enumerating over itself creates infinite loop
+315c1bd4,5,-0.5,y8. prints distance columns twice - forgot to comment the print statement out
+9e76591a,5,-1.5,y9. combining sorted and unsorted lists in final output results in scrambled datapoints
+1af398ff,5,-2.0,y10. forgot print statement
+c0d4b056,5,-2.0,y11. only first line is printed
